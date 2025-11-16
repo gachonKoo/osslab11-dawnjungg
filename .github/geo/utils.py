@@ -1,9 +1,8 @@
-import geo.utils as utils
+import math
+def pythagoras(a, b):
+    c = math.sqrt(a**2 + b**2)
+    return c
 
-a,b = 3,4
-c = utils.pythagoras(3, 4)
-print('c = ', c)
-
-r = 10
-area = utils.circle(10)
-print('area = ', area)
+def circle(r):
+    area = math.pi * r**2
+    return area
